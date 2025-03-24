@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.style.css">
+</head>
+<body>
+    <h2>Please Enter Your Payment Details</h2>
+    <form id="form" action="booking-confirmation.html" method="POST">
+        <label for="name">Card Number:</label>
+        <input type="text" id="name" name="name" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+        <label for="email">Card Holder's Name:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="phone">Expiry Date:</label>
+        <input type="tel" id="phone" name="phone" placeholder="mm/yy" required>
+        <label for="address">CVV:</label>
+        <input type="text" id="address" name="address" placeholder="xxx" required>
+        
+        <button type="back">Back</button>
+        <button type="submit">Submit</button>
+
+</body>
+</html>
