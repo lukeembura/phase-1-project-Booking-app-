@@ -76,7 +76,7 @@
         <body>
             <form id="payment-method-form" onsubmit="handlePaymentSubmission(event)">
                 <label for="payment-method">Select Payment Method</label>
-                <select id="payment-method" name="payment-method" required>
+                <select id="payment-method" name="payment-method" required onchange="togglePaymentFields()">
                   <option value="credit-card">Credit Card</option>
                   <option value="bank-transfer">Bank Transfer</option>
                 </select>
