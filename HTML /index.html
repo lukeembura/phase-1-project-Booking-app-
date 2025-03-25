@@ -49,6 +49,7 @@
 
     <section id="booking-info">
         <h2>Please fill in the information below:</h2>
+        <div>
     <form id="form" action="payment.html" method="POST">
         <label for="name">Starting Station:</label>
         <input type="text" id="from" name="from" placeholder="From" required>
@@ -57,14 +58,14 @@
         <label for="phone">Starting Date:</label>
         <input type="tel" id="phone" name="phone" placeholder="dd/mm/yyyy" required>
         <label for="address">Starting Time:</label>
-        <input type="text" id="address" name="address" placeholder="hh/mm" required>
+        <input type="text" id="address" name="address" placeholder="hh:mm" required>
         <label for="city">Arriving Date:</label>
         <input type="text" id="city" name="city" placeholder="dd/mm/yyyy" required>
         <label for="state">Arriving Time:</label>
-        <input type="text" id="state" name="state" placeholder="hh/mm" required>
+        <input type="text" id="state" name="state" placeholder="hh:mm" required>
         <label for="zip">Number of Passengers:</label>
         <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
-        
+    </div>
         
         <button type="submit">Submit Bookings</button>
 
@@ -102,7 +103,7 @@
     </section>
 
     <section id="booking-confirmation">
-        <h1>Confirm The Booking Information Below</h1>
+        <h1>Confirm The Booking Information Below:</h1>
     <div class="details-container">
       <p><strong>Full Name:</strong> <span id="name"></span></p>
       <p><strong>Email Address:</strong> <span id="email"></span></p>
