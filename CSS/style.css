@@ -4,30 +4,39 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
-#booking-homepage {
-    background-color: grey;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 100px;
-    text-align: left;
+.navbar{
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
     display: inline-block;
-    width: auto;
-    
-}
-#booking-homepage label {
-    color: rgb(108, 192, 164);
-    font-size: 20px;
-    margin-bottom: 20px;
-    display: block;
-}
-#booking-homepage input {
-    width: auto;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid rgb(108, 192, 164);
-}
+    margin: 0 25px;
+    position: relative;
+  }
+    .navbar ul li a{
+        text-decoration:solid;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .navbar ul li::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: lightskyblue;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        transition: 0.5s;
+      }
+
+      .navbar ul li:hover::after{
+        width: 100%;
+      }
 
 .header{
     color: white;
@@ -52,4 +61,52 @@
 .description ul li{
     margin-top: 10px;
     text-align: center;
+}
+
+#booking-homepage {
+    background-color: rgb(53, 48, 48);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    
+}
+#booking-homepage label {
+    color: rgb(108, 192, 164);
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+#booking-homepage input {
+    width: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(108, 192, 164);
+}
+
+#booking-info {
+    background-color: rgb(53, 48, 48);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    
+}
+#booking-info label {
+    color: rgb(108, 192, 164);
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+#booking-info input {
+    width: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(108, 192, 164);
 }
