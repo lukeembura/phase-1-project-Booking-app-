@@ -53,12 +53,14 @@
 }
 .description p{
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.description ul{
+.description ol{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    padding: 0;
 }
-.description ul li{
+.description ol li{
     margin-top: 10px;
     text-align: center;
 }
