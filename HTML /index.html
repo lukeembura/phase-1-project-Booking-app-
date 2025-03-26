@@ -8,15 +8,10 @@
 </head>
 <body id="body">
   <div class="navbar">
-        
             <a href="#booking-homepage">Home Page</a></li>
             <a href="#booking-info">Booking Info</a></li>
             <a href="#payment">Payment</a></li>
             <a href="#booking-confirmation">Booking Confirmation</a></li>
-            <a href="#all-bookings">All bookings</a></li>
-
-        
-
     </div>
     
     <h1 class="header">BOOKING APP</h1>
@@ -69,7 +64,7 @@
         <label for="zip">Number of Passengers:</label>
         <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
     </div>
-        
+        <button type="next">Next</button>
         <button type="submit">Submit Bookings</button>
     </section>
 
@@ -99,7 +94,7 @@
                   <input type="text" id="bank-name" name="bank-name" placeholder="Enter your bank name">
                 </div>
                
-                <button type="submit">Submit</button>
+                <button type="submit">Next</button>
               </form>
               
     </section>
@@ -119,16 +114,6 @@
         <button onclick="saveBooking()">Save Booking</button>
       
     </div>
-    </section>
-
-    <section id="all-bookings">
-        <h1>All Bookings</h1>
-        <div class="details-container" id="details-container">
-          <!-- Booking details will be dynamically inserted here -->
-        </div>
-        <div class="button-container">
-          
-        </div>
     </section>
 
     <script src="../JS/index.js"></script>
