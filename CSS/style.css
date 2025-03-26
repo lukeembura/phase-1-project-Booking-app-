@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 #body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://t4.ftcdn.net/jpg/01/17/52/47/360_F_117524744_1GfVxCN8ePvmAg4Q2kxNqwuUtYdIdWxV.jpg);
@@ -10,7 +14,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
+
+
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -27,7 +34,7 @@
         content: '';
         width: 0;
         height: 2px;
-        background: lightskyblue;
+        background: red;
         position: absolute;
         left: 0;
         bottom: 1px;
@@ -75,6 +82,18 @@
     width: 100%;
     
 }
+#booking-homepage h1 {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+#booking-homepage h2 {
+    color: rgb(108, 192, 164);
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
 #booking-homepage label {
     color: rgb(108, 192, 164);
     font-size: 20px;
@@ -99,6 +118,12 @@
     width: 100%;
     
 }
+#booking-info h1 {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
 #booking-info label {
     color: rgb(108, 192, 164);
     font-size: 20px;
@@ -112,6 +137,13 @@
     border-radius: 5px;
     border: 1px solid rgb(108, 192, 164);
 }
+.Info {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+    font-style: italic;
+}
 
 #payment {
     background-color: rgb(53, 48, 48);
@@ -122,6 +154,12 @@
     display: inline-block;
     width: 100%;
     
+}
+#payment h1 {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
 }
 #payment label {
     color: rgb(108, 192, 164);
@@ -147,19 +185,19 @@
     width: 100%;
     
 }
-#booking-confirmation label {
+#booking-confirmation h1 {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+#booking-confirmation p {
     color: rgb(108, 192, 164);
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
 }
-#booking-confirmation input {
-    width: auto;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid rgb(108, 192, 164);
-}
+
 
 #all-bookings {
     background-color: rgb(53, 48, 48);
@@ -170,6 +208,12 @@
     display: inline-block;
     width: 100%;
     
+}
+#all-bookings h1 {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block;
 }
 #all-bookings label {
     color: rgb(108, 192, 164);

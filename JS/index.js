@@ -11,3 +11,7 @@ function togglePaymentFields() {
         bankTransferFields.style.display = "block";
     }
 }
+
+function goToNextPage() {
+    window.location.href = "booking-info"; 
+  }

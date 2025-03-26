@@ -8,14 +8,14 @@
 </head>
 <body id="body">
   <div class="navbar">
-        <ul>
-            <li><a href="#">Home Page</a></li>
-            <li><a href="#">Booking Info</a></li>
-            <li><a href="#">Payment</a></li>
-            <li><a href="#">Booking Confirmation</a></li>
-            <li><a href="#">All bookings</a></li>
+        
+            <a href="#booking-homepage">Home Page</a></li>
+            <a href="#booking-info">Booking Info</a></li>
+            <a href="#payment">Payment</a></li>
+            <a href="#booking-confirmation">Booking Confirmation</a></li>
+            <a href="#all-bookings">All bookings</a></li>
 
-        </ul>
+        
 
     </div>
     
@@ -34,8 +34,8 @@
     </p>
     </div>
     <section id="booking-homepage">
-    <h2>Welcome To The Booking Page</h2>
-    <h3>Please proceed to make your booking:</h3>
+    <h1>Welcome To The Booking Page</h1>
+    <h2>Please proceed to make your booking:</h2>
     <form id="form" action="all-bookings.html" method="POST">
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your full name" required>
@@ -45,10 +45,13 @@
         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
        
     </form>
+    <button onclick="goToSection('booking-info')">Next</button>
+    <p class="Info">Note:Any announcements will be sent to your email so you are kindly asked to be frequently checking your email.</p>
+    
     </section>
 
     <section id="booking-info">
-        <h2>Please fill in the information below:</h2>
+        <h1>Please fill in the information below:</h1>
         <div>
     <form id="form" action="payment.html" method="POST">
         <label for="name">Starting Station:</label>
@@ -68,11 +71,10 @@
     </div>
         
         <button type="submit">Submit Bookings</button>
-
     </section>
 
     <section id="payment">
-        <h2>Please Enter Your Payment Details:</h2>
+        <h1>Please Enter Your Payment Details:</h1>
         <body>
             <form id="payment-method-form" onsubmit="handlePaymentSubmission(event)">
                 <label for="payment-method">Select Payment Method</label>
@@ -108,8 +110,8 @@
       <p><strong>Full Name:</strong> <span id="name"></span></p>
       <p><strong>Email Address:</strong> <span id="email"></span></p>
       <p><strong>Phone Number:</strong> <span id="phone"></span></p>
-      <p><strong>From:</strong> <span id="from"></span></p>
-      <p><strong>To:</strong> <span id="to"></span></p>
+      <p><strong>Starting Station:</strong> <span id="from"></span></p>
+      <p><strong>Destination:</strong> <span id="to"></span></p>
       <p><strong>Number of Passengers:</strong> <span id="passengers"></span></p>
     </div>
     <div class="button-container">
