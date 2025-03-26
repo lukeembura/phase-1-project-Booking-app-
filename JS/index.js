@@ -18,14 +18,38 @@ function goToNextPage() {
 
 // Fetch train data from db.json
 async function fetchTrainData() {
-    const url = "../db.json"; // Adjust the path if necessary
+    const url = "./db.json"; // Adjust the path if necessary
     try {
         const response = await fetch(url);
         const trains = await response.json();
+        populateStationOptions(trains);
         populateTrainOptions(trains);
     } catch (error) {
         console.error("Error fetching train data:", error);
     }
+}
+
+// Populate starting and arrival station options
+function populateStationOptions(trains) {
+    const startingStationSelect = document.getElementById("starting-station");
+    const arrivalStationSelect = document.getElementById("arrival-station");
+
+    const startingStations = [...new Set(trains.map(train => train.departure_station))];
+    const arrivalStations = [...new Set(trains.map(train => train.arrival_station))];
+
+    startingStations.forEach(station => {
+        const option = document.createElement("option");
+        option.value = station;
+        option.textContent = station;
+        startingStationSelect.appendChild(option);
+    });
+
+    arrivalStations.forEach(station => {
+        const option = document.createElement("option");
+        option.value = station;
+        option.textContent = station;
+        arrivalStationSelect.appendChild(option);
+    });
 }
 
 // Populate train options in the booking form
@@ -81,6 +105,22 @@ function displayBookingConfirmation(fullName, email, phone, train) {
     `;
 }
 
+// Add a clock system beside departure and arrival times
+function addClockSystem() {
+    const departureTimeInput = document.getElementById("departure-time");
+    const arrivalTimeInput = document.getElementById("arrival-time");
+
+    const updateClock = () => {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        departureTimeInput.value = timeString;
+        arrivalTimeInput.value = timeString;
+    };
+
+    setInterval(updateClock, 1000); // Update every second
+}
+
 // Initialize the app
 fetchTrainData();
+addClockSystem();
 
