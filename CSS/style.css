@@ -1,7 +1,12 @@
 html {
     scroll-behavior: smooth;
   }
+
+  body::-webkit-scrollbar {
+    display: none; 
+  }
   
+
 #body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://t4.ftcdn.net/jpg/01/17/52/47/360_F_117524744_1GfVxCN8ePvmAg4Q2kxNqwuUtYdIdWxV.jpg);
@@ -9,17 +14,19 @@ html {
     background-attachment: fixed;
 }
 .navbar{
-    margin: auto;
-    padding: 35px 0;
+    margin: 0 10px; 
+    padding: 10px 5px; 
+    font-size: 16px;
+    padding: 5px 0; 
+    height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: whitesmoke; /* Change as needed */
-    z-index: 1000; /* Make sure it stays above other content */
-    padding: 15px;
+    background-color: whitesmoke; 
+    z-index: 1000; 
 }
 
 .header{
