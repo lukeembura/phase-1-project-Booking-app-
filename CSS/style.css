@@ -14,36 +14,13 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: whitesmoke; /* Change as needed */
+    z-index: 1000; /* Make sure it stays above other content */
+    padding: 15px;
 }
-
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 25px;
-    position: relative;
-  }
-    .navbar ul li a{
-        text-decoration:solid;
-        color: #fff;
-        font-size: 20px;
-        text-transform: uppercase;
-    }
-    .navbar ul li::after{
-        content: '';
-        width: 0;
-        height: 2px;
-        background: red;
-        position: absolute;
-        left: 0;
-        bottom: 1px;
-        transition: 0.5s;
-      }
-
-      .navbar ul li:hover::after{
-        width: 100%;
-      }
 
 .header{
     color: white;
