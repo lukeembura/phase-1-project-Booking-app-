@@ -187,3 +187,10 @@ html {
     margin-bottom: 20px;
     display: block;
 }
+ .information {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+    font-style: italic;
+}

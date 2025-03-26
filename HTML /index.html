@@ -51,15 +51,11 @@
     <form id="form" action="payment.html" method="POST">
         <label for="name">Starting Station:</label>
         <input type="text" id="from" name="from" placeholder="From" required>
-        <label for="name">Destination:</label>
+        <label for="name">Arrival Station:</label>
         <input type="text" id="to" name="to" placeholder="To" required>
-        <label for="phone">Starting Date:</label>
-        <input type="tel" id="phone" name="phone" placeholder="dd/mm/yyyy" required>
-        <label for="address">Starting Time:</label>
+        <label for="address">Departure Time:</label>
         <input type="text" id="address" name="address" placeholder="hh:mm" required>
-        <label for="city">Arriving Date:</label>
-        <input type="text" id="city" name="city" placeholder="dd/mm/yyyy" required>
-        <label for="state">Arriving Time:</label>
+        <label for="state">Arrival Time:</label>
         <input type="text" id="state" name="state" placeholder="hh:mm" required>
         <label for="zip">Number of Passengers:</label>
         <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
@@ -114,6 +110,8 @@
         <button onclick="saveBooking()">Save Booking</button>
       
     </div>
+
+    <p class="information">Note: Please make sure all the information is correct before saving the booking. You are also kindly asked to arrive to the station before the departure time.</p>
     </section>
 
     <script src="../JS/index.js"></script>
