@@ -16,13 +16,13 @@
     
     <h1 class="header">BOOKING APP</h1>
     <div class="description">
-      <p>This is a train transportation booking app that allows users to search, view, and book train tickets with ease. The application is designed to streamline the ticket reservation process by providing a simple and intuitive interface for both new and returning users.
+      <p>This is a train transportation booking app that allows users to book train tickets with ease. The application is designed to streamline the ticket reservation process by providing a simple and intuitive interface for both new and returning users.
 
       With this app, users can:
       <ul>
-      <li>Create an account or log in to access their bookings.</li>
+      <li>Log in to access their bookings.</li>
       
-      <li>Search available trains by entering departure and destination stations along with a travel date.</li>
+      <li>Search available trains by entering departure and destination stations.</li>
       
       <li>Book a ticket by entering passenger details and confirming their trip.</li>
       </ul>
@@ -40,7 +40,7 @@
         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
        
     </form>
-    <button onclick="goToSection('booking-info')">Next</button>
+    <button type="button" onClick="goToSection('booking-info')">Next</button>
     <p class="Info">Note:Any announcements will be sent to your email so you are kindly asked to be frequently checking your email.</p>
     
     </section>
@@ -64,7 +64,7 @@
         <label for="zip">Number of Passengers:</label>
         <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
     </div>
-        <button type="next">Next</button>
+        <button type="button" onClick="goToSection('payment')">Next</button>
         <button type="submit">Submit Bookings</button>
     </section>
 
@@ -74,8 +74,8 @@
             <form id="payment-method-form" onsubmit="handlePaymentSubmission(event)">
                 <label for="payment-method">Select Payment Method</label>
                 <select id="payment-method" name="payment-method" required onchange="togglePaymentFields()">
-                  <option value="credit-card">Credit Card</option>
-                  <option value="bank-transfer">Bank Transfer</option>
+                  <option value="credit-card" id="credit">Credit Card</option>
+                  <option value="bank-transfer" id="bank">Bank Transfer</option>
                 </select>
           
                 <div id="credit-card-fields">
@@ -94,7 +94,7 @@
                   <input type="text" id="bank-name" name="bank-name" placeholder="Enter your bank name">
                 </div>
                
-                <button type="submit">Next</button>
+                <button type="button" onClick="goToSection('booking-confirmation')">Next</button>
               </form>
               
     </section>

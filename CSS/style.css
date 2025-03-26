@@ -98,15 +98,6 @@ html {
     border: 1px solid rgb(108, 192, 164);
 }
 
-/* Train dropdown styling */
-#train {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid rgb(108, 192, 164);
-}
-
 #booking-info {
     background-color: rgb(53, 48, 48);
     padding: 20px;
@@ -173,15 +164,23 @@ html {
     border-radius: 5px;
     border: 1px solid rgb(108, 192, 164);
 }
+select, input[type='text'], input[name='card-number'] {
+    width: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(108, 192, 164);
+}
 
-/* Confirmation section styling */
 #booking-confirmation {
     background-color: rgb(53, 48, 48);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 100px;
     text-align: center;
-    color: white;
+    display: inline-block;
+    width: 100%;
+    
 }
 #booking-confirmation h1 {
     color: gold;
@@ -191,35 +190,7 @@ html {
 }
 #booking-confirmation p {
     color: rgb(108, 192, 164);
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: block;
-}
- .information {
-    color: white;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
     display: block;
-    font-style: italic;
-}
-
-/* Dropdown styling */
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid rgb(108, 192, 164);
-}
-
-/* Clock system styling */
-#departure-time, #arrival-time {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid rgb(108, 192, 164);
-    background-color: #f9f9f9;
-    color: #333;
-    font-size: 16px;
 }
