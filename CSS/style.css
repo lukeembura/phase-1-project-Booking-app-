@@ -98,6 +98,15 @@ html {
     border: 1px solid rgb(108, 192, 164);
 }
 
+/* Train dropdown styling */
+#train {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(108, 192, 164);
+}
+
 #booking-info {
     background-color: rgb(53, 48, 48);
     padding: 20px;
@@ -165,15 +174,14 @@ html {
     border: 1px solid rgb(108, 192, 164);
 }
 
+/* Confirmation section styling */
 #booking-confirmation {
     background-color: rgb(53, 48, 48);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 20px;
     text-align: center;
-    display: inline-block;
-    width: 100%;
-    
+    color: white;
 }
 #booking-confirmation h1 {
     color: gold;
@@ -183,8 +191,8 @@ html {
 }
 #booking-confirmation p {
     color: rgb(108, 192, 164);
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
     display: block;
 }
  .information {

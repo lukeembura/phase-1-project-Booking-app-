@@ -41,28 +41,32 @@
        
     </form>
     <button type="login">Log in</button>
+    
     <p class="Info">Note:Any announcements will be sent to your email so you are kindly asked to be frequently checking your email.</p>
     
     </section>
 
     <section id="booking-info">
-        <h1>Please fill in the information below:</h1>
-        <div>
-    <form id="form" action="payment.html" method="POST">
-        <label for="name">Starting Station:</label>
-        <input type="text" id="from" name="from" placeholder="From" required>
-        <label for="name">Arrival Station:</label>
-        <input type="text" id="to" name="to" placeholder="To" required>
-        <label for="address">Departure Time:</label>
-        <input type="text" id="address" name="address" placeholder="hh:mm" required>
-        <label for="state">Arrival Time:</label>
-        <input type="text" id="state" name="state" placeholder="hh:mm" required>
-        <label for="zip">Number of Passengers:</label>
-        <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
-    </div>
-        <button type="next">Next</button>
-        <button type="submit">Submit Bookings</button>
-    </section>
+    <h1>Please fill in the information below:</h1>
+    <form id="form" onsubmit="handleBookingSubmission(event)">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="train">Select Train:</label>
+        <select id="train" name="train" required>
+            <option value="">-- Select a Train --</option>
+            <!-- Train options will be dynamically populated -->
+        </select>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</section>
 
     <section id="payment">
         <h1>Please Enter Your Payment Details:</h1>
@@ -96,23 +100,11 @@
     </section>
 
     <section id="booking-confirmation">
-        <h1>Confirm The Booking Information Below:</h1>
+    <h1>Confirm The Booking Information Below:</h1>
     <div class="details-container">
-      <p><strong>Full Name:</strong> <span id="name"></span></p>
-      <p><strong>Email Address:</strong> <span id="email"></span></p>
-      <p><strong>Phone Number:</strong> <span id="phone"></span></p>
-      <p><strong>Starting Station:</strong> <span id="from"></span></p>
-      <p><strong>Destination:</strong> <span id="to"></span></p>
-      <p><strong>Number of Passengers:</strong> <span id="passengers"></span></p>
+        <!-- Booking confirmation details will be dynamically added here -->
     </div>
-    <div class="button-container">
-        
-        <button onclick="saveBooking()">Save Booking</button>
-      
-    </div>
-
-    <p class="information">Note: Please make sure all the information is correct before saving the booking. You are also kindly asked to arrive to the station before the departure time.</p>
-    </section>
+</section>
 
     <script src="../JS/index.js"></script>
 </body>
