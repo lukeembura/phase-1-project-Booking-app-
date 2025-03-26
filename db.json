@@ -1,0 +1,163 @@
+[
+    {
+      "train_id": "001",
+      "departure_station": "Nairobi",
+      "arrival_station": "Mombasa",
+      "departure_time": "08:00 AM",
+      "arrival_time": "01:00 PM",
+      "price": 700
+    },
+    {
+      "train_id": "002",
+      "departure_station": "Mombasa",
+      "arrival_station": "Nairobi",
+      "departure_time": "03:00 PM",
+      "arrival_time": "08:00 PM",
+      "price": 700
+    },
+    {
+        "train_id": "003",
+      "departure_station": "Nairobi",
+      "arrival_station": "Kisumu",
+      "departure_time": "04:00 PM",
+      "arrival_time": "10:00 PM",
+      "price": 1000
+
+    },
+    {
+        "train_id": "004",
+      "departure_station": "Nairobi",
+      "arrival_station": "Suswa",
+      "departure_time": "10:00 AM",
+      "arrival_time": "11:00 AM",
+      "price": 300
+    },
+    {
+        "train_id": "005",
+      "departure_station": "Nairobi",
+      "arrival_station": "Rongai",
+      "departure_time": "04:00 PM",
+      "arrival_time": "04:40 PM",
+      "price": 100
+    },
+    {
+        "train_id": "006",
+      "departure_station": "Nairobi",
+      "arrival_station": "Bomet",
+      "departure_time": "08:00 AM",
+      "arrival_time": "11:00 AM",
+      "price": 800
+    },
+    {
+        "train_id": "007",
+        "departure_station": "Kisumu",
+        "arrival_station": "Nairobi",
+        "departure_time": "09:00 AM",
+        "arrival_time": "03:00 PM",
+        "price": 1000
+    },
+    {
+        "train_id": "008",
+      "departure_station": "Suswa",
+      "arrival_station": "Nairobi",
+      "departure_time": "7:00 AM",
+      "arrival_time": "8:00 AM",
+      "price": 300
+    },
+    {
+        "train_id": "009",
+      "departure_station": "Rongai",
+      "arrival_station": "Nairobi",
+      "departure_time": "07:00 AM",
+      "arrival_time": "07:40 AM",
+      "price": 100
+    },
+    {
+        "train_id": "010",
+      "departure_station": "Bomet",
+      "arrival_station": "Nairobi",
+      "departure_time": "04:00 PM",
+      "arrival_time": "07:00 PM",
+      "price": 800
+    },
+    {
+        "train_id": "011",
+        "departure_station": "Mombasa",
+        "arrival_station": "Kisumu",
+        "departure_time": "08:00 AM",
+        "arrival_time": "03:00 PM",
+        "price": 1200
+    },
+    {
+        "train_id": "012",
+        "departure_station": "Kisumu",
+        "arrival_station": "Mombasa",
+        "departure_time": "03:00 PM",
+        "arrival_time": "10:00 PM",
+        "price": 1200
+    },
+    {
+        "train_id": "013",
+        "departure_station": "Nairobi",
+        "arrival_station": "Nakuru",
+        "departure_time": "12:00 PM",
+        "arrival_time": "01:30 PM",
+        "price": 400
+    },
+    {
+        "train_id": "014",
+        "departure_station": "Nakuru",
+        "arrival_station": "Nairobi",
+        "departure_time": "5:00 AM",
+        "arrival_time": "07:30 AM",
+        "price": 400
+    },
+    {
+        "train_id": "015",
+        "departure_station": "Nairobi",
+        "arrival_station": "Eldoret",
+        "departure_time": "04:00 PM",
+        "arrival_time": "07:00 PM",
+        "price": 200
+    },
+    {
+        "train_id": "016",
+        "departure_station": "Eldoret",
+        "arrival_station": "Nairobi",
+        "departure_time": "08:00 AM",
+        "arrival_time": "11:00 AM",
+        "price": 200
+    },
+    {
+        "train_id": "017",
+        "departure_station": "Nairobi",
+        "arrival_station": "Mandera",
+        "departure_time": "08:00 AM",
+        "arrival_time": "04:00 PM",
+        "price": 1500
+    },
+    {
+        "train_id": "018",
+        "departure_station": "Mandera",
+        "arrival_station": "Nairobi",
+        "departure_time": "12:00 PM",
+        "arrival_time": "12:00 AM",
+        "price": 1500
+    },
+    {
+        "train_id": "019",
+        "departure_station": "Nairobi",
+        "arrival_station": "Kisii",
+        "departure_time": "08:00 AM",
+        "arrival_time": "01:00 PM",
+        "price": 900
+    },
+    {
+        "train_id": "020",
+        "departure_station": "Kisii",
+        "arrival_station": "Nairobi",
+        "departure_time": "04:00 PM",
+        "arrival_time": "09:00 PM",
+        "price": 900
+    }
+  ]
