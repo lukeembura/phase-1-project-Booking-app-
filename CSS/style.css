@@ -1,9 +1,11 @@
 html {
     scroll-behavior: smooth;
+    margin: 0;
   }
 
   body::-webkit-scrollbar {
     display: none; 
+    margin: 0;
   }
   
 
@@ -14,19 +16,23 @@ html {
     background-attachment: fixed;
 }
 .navbar{
-    margin: 0 10px; 
-    padding: 10px 5px; 
-    font-size: 16px;
+    margin: 0 5px;  
+    font-size: 25px;
     padding: 5px 0; 
     height: auto;
     display: flex;
-    justify-content: space-between ;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: whitesmoke; 
     z-index: 1000; 
+    display: flex;
+    justify-content: space-evenly; 
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+
 }
 
 .header{
