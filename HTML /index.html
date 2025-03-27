@@ -50,12 +50,30 @@
         <form id="form" action="payment.html" method="POST">
             <label for="from">Departure Station:</label>
             <select id="from" name="from" required>
-                <option value="">-- Select Departure Station --</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Rongai">Rongai</option>
+                <option value="Suswa">Suswa</option> 
+                <option value="Kisii">Kisii</option>
+                <option value="Mandera">Mandera</option>
+                <option value="Bomet">Bomet</option>
             </select>
     
             <label for="to">Arrival Station:</label>
             <select id="to" name="to" required>
-                <option value="">-- Select Arrival Station --</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Rongai">Rongai</option>
+                <option value="Suswa">Suswa</option>
+                <option value="Kisii">Kisii</option>
+                <option value="Mandera">Mandera</option>
+                <option value="Bomet">Bomet</option>
             </select>
     
             <label for="address">Departure Time:</label>
@@ -66,8 +84,9 @@
     
             <label for="zip">Number of Passengers:</label>
             <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
-    
+            <div>
             <button type="button" onclick="saveBookingInfoData()">Next</button>
+            </div>
         </form>
     </section>
 
