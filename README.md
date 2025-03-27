@@ -2,7 +2,7 @@ Booking App
 
 Description
 
-It allows users to book a train ticket from different starting stations to their desired destinations.One needs to first login then make their booking.
+It allows users to book a train ticket from different starting stations to their desired destinations. One needs to first log in, then make their booking.
 
 Dependencies
 
