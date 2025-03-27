@@ -40,32 +40,35 @@
         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
        
     </form>
-    <button type="button" onClick="saveHomePageData()">Next</button>
+    <button type="button" onclick="saveHomePageData()">Next</button>
     <p class="Info">Note:Any announcements will be sent to your email so you are kindly asked to be frequently checking your email.</p>
     
     </section>
 
     <section id="booking-info">
         <h1>Please fill in the information below:</h1>
-        <div>
-    <form id="form" action="payment.html" method="POST">
-        <label for="name">Starting Station:</label>
-        <input type="text" id="from" name="from" placeholder="From" required>
-        <label for="name">Destination:</label>
-        <input type="text" id="to" name="to" placeholder="To" required>
-        <label for="phone">Starting Date:</label>
-        <input type="tel" id="phone" name="phone" placeholder="dd/mm/yyyy" required>
-        <label for="address">Starting Time:</label>
-        <input type="text" id="address" name="address" placeholder="hh:mm" required>
-        <label for="city">Arriving Date:</label>
-        <input type="text" id="city" name="city" placeholder="dd/mm/yyyy" required>
-        <label for="state">Arriving Time:</label>
-        <input type="text" id="state" name="state" placeholder="hh:mm" required>
-        <label for="zip">Number of Passengers:</label>
-        <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
-    </div>
-        <button type="button" onClick="goToSection('payment')">Next</button>
-        <button type="submit">Submit Bookings</button>
+        <form id="form" action="payment.html" method="POST">
+            <label for="from">Departure Station:</label>
+            <select id="from" name="from" required>
+                <option value="">-- Select Departure Station --</option>
+            </select>
+    
+            <label for="to">Arrival Station:</label>
+            <select id="to" name="to" required>
+                <option value="">-- Select Arrival Station --</option>
+            </select>
+    
+            <label for="address">Departure Time:</label>
+            <input type="text" id="address" name="address" placeholder="hh:mm" required>
+    
+            <label for="state">Arrival Time:</label>
+            <input type="text" id="state" name="state" placeholder="hh:mm" required>
+    
+            <label for="zip">Number of Passengers:</label>
+            <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
+    
+            <button type="button" onclick="saveBookingInfoData()">Next</button>
+        </form>
     </section>
 
     <section id="payment">
@@ -102,19 +105,14 @@
     <section id="booking-confirmation">
         <h1>Confirm The Booking Information Below:</h1>
     <div class="details-container">
-      <p><strong>Full Name:</strong> <span id="confirm-name"></span></p>
-      <p><strong>Email Address:</strong> <span id="confirm-email"></span></p>
-      <p><strong>Phone Number:</strong> <span id="confirm-phone"></span></p>
-      <p><strong>Starting Station:</strong> <span id="from"></span></p>
-      <p><strong>Destination:</strong> <span id="to"></span></p>
-      <p><strong>Number of Passengers:</strong> <span id="passengers"></span></p>
+        <p><strong>Full Name:</strong> <span id="confirm-name"></span></p>
+        <p><strong>Email Address:</strong> <span id="confirm-email"></span></p>
+        <p><strong>Phone Number:</strong> <span id="confirm-phone"></span></p>
+        <p><strong>Departure Station:</strong> <span id="confirm-departure"></span></p>
+        <p><strong>Arrival Station:</strong> <span id="confirm-arrival"></span></p>
+        <p><strong>Number of Passengers:</strong> <span id="confirm-passengers"></span></p>
     </div>
-    <div class="button-container">
-        
-        <button onclick="saveBooking()">Save Booking</button>
-      
-    </div>
-    </section>
+</section>
 
     <script src="../JS/index.js"></script>
 </body>
