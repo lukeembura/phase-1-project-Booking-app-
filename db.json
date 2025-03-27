@@ -1,7 +1,7 @@
 [
     {
       "train_id": "001",
-      "starting_station": "Nairobi",
+      "departure_station": "Nairobi",
       "arrival_station": "Mombasa",
       "departure_time": "08:00 AM",
       "arrival_time": "01:00 PM",
