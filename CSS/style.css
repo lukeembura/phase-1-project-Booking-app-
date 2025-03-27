@@ -8,13 +8,12 @@ html {
     margin: 0;
   }
   
-/* Default Light Mode Styles */
 body {
     background-color: #ffffff;
     color: #000000;
 }
 
-/* Dark Mode Styles */
+
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -48,11 +47,11 @@ body.dark-mode {
 
 .navbar.dark-mode {
     background-color: #333333;
-    color: #ffffff;
+    color: #faf6f6;
 }
 
 button#toggle-theme {
-    background-color: #007bff;
+    background-color: rgb(2, 45, 61);
     color: #ffffff;
     border: none;
     padding: 10px 15px;

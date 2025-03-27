@@ -40,10 +40,11 @@ function saveBookingInfoData() {
     localStorage.setItem("arrivalStation", arrivalStation);
     localStorage.setItem("numberOfPassengers", numberOfPassengers);
 
-    goToSection("booking-confirmation");
+    goToSection("payment");
 }
 
-function displayConfirmationData() {
+function confirmBooking() {
+    
     const fullName = localStorage.getItem("fullName");
     const email = localStorage.getItem("email");
     const phone = localStorage.getItem("phone");
@@ -51,12 +52,16 @@ function displayConfirmationData() {
     const arrivalStation = localStorage.getItem("arrivalStation");
     const numberOfPassengers = localStorage.getItem("numberOfPassengers");
 
+    
     document.getElementById("confirm-name").textContent = fullName || "N/A";
     document.getElementById("confirm-email").textContent = email || "N/A";
     document.getElementById("confirm-phone").textContent = phone || "N/A";
     document.getElementById("confirm-departure").textContent = departureStation || "N/A";
     document.getElementById("confirm-arrival").textContent = arrivalStation || "N/A";
     document.getElementById("confirm-passengers").textContent = numberOfPassengers || "N/A";
+
+    
+    goToSection("booking-confirmation");
 }
 
 async function fetchTrainData() {
@@ -91,7 +96,6 @@ function populateStationDropdowns(trains) {
         arrivalDropdown.appendChild(option);
     });
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const toggleThemeButton = document.getElementById("toggle-theme");
