@@ -8,6 +8,17 @@ html {
     margin: 0;
   }
   
+/* Default Light Mode Styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
 
 #body {
     font-family: Arial, sans-serif;
@@ -33,6 +44,24 @@ html {
     padding: 0;
     flex-wrap: wrap;
 
+}
+
+.navbar.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+button#toggle-theme {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#toggle-theme:hover {
+    background-color: #0056b3;
 }
 
 .header{

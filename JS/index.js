@@ -59,14 +59,14 @@ function displayConfirmationData() {
     document.getElementById("confirm-passengers").textContent = numberOfPassengers || "N/A";
 }
 
-async function fetchStations() {
+async function fetchTrainData() {
     try {
-        const response = await fetch('./db.json'); // Adjust the path if necessary
+        const response = await fetch('./db.json'); 
         const trains = await response.json();
 
         populateStationDropdowns(trains);
     } catch (error) {
-        console.error("Error fetching station data:", error);
+        console.error("Error fetching train data:", error);
     }
 }
 
@@ -92,5 +92,16 @@ function populateStationDropdowns(trains) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", fetchStations);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleThemeButton = document.getElementById("toggle-theme");
+
+    toggleThemeButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("dark-mode");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", fetchTrainData);
 document.addEventListener("DOMContentLoaded", displayConfirmationData);

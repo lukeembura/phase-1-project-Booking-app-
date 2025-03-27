@@ -8,11 +8,12 @@
 </head>
 <body id="body">
   <div class="navbar">
-            <a href="#booking-homepage">Home Page</a></li>
-            <a href="#booking-info">Booking Info</a></li>
-            <a href="#payment">Payment</a></li>
-            <a href="#booking-confirmation">Booking Confirmation</a></li>
-    </div>
+    <a href="#booking-homepage">Home Page</a>
+    <a href="#booking-info">Booking Info</a>
+    <a href="#payment">Payment</a>
+    <a href="#booking-confirmation">Booking Confirmation</a>
+    <button id="toggle-theme">Toggle Dark/Light Mode</button>
+</div>
     
     <h1 class="header">BOOKING APP</h1>
     <div class="description">
@@ -50,30 +51,12 @@
         <form id="form" action="payment.html" method="POST">
             <label for="from">Departure Station:</label>
             <select id="from" name="from" required>
-                <option value="Nairobi">Nairobi</option>
-                <option value="Mombasa">Mombasa</option>
-                <option value="Kisumu">Kisumu</option>
-                <option value="Eldoret">Eldoret</option>
-                <option value="Nakuru">Nakuru</option>
-                <option value="Rongai">Rongai</option>
-                <option value="Suswa">Suswa</option> 
-                <option value="Kisii">Kisii</option>
-                <option value="Mandera">Mandera</option>
-                <option value="Bomet">Bomet</option>
+                <option value="">-- Select Departure Station --</option>
             </select>
     
             <label for="to">Arrival Station:</label>
             <select id="to" name="to" required>
-                <option value="Mombasa">Mombasa</option>
-                <option value="Nairobi">Nairobi</option>
-                <option value="Kisumu">Kisumu</option>
-                <option value="Eldoret">Eldoret</option>
-                <option value="Nakuru">Nakuru</option>
-                <option value="Rongai">Rongai</option>
-                <option value="Suswa">Suswa</option>
-                <option value="Kisii">Kisii</option>
-                <option value="Mandera">Mandera</option>
-                <option value="Bomet">Bomet</option>
+                <option value="">-- Select Arrival Station --</option>
             </select>
     
             <label for="address">Departure Time:</label>
