@@ -36,6 +36,12 @@ function saveBookingInfoData() {
     const arrivalStation = document.getElementById("to").value;
     const numberOfPassengers = document.getElementById("zip").value;
 
+    // Validate the number of passengers
+    if (numberOfPassengers > 20) {
+        alert("The maximum number of passengers allowed is 20. Please enter a valid number.");
+        return; // Stop execution if the validation fails
+    }
+
     localStorage.setItem("departureStation", departureStation);
     localStorage.setItem("arrivalStation", arrivalStation);
     localStorage.setItem("numberOfPassengers", numberOfPassengers);
@@ -44,7 +50,6 @@ function saveBookingInfoData() {
 }
 
 function confirmBooking() {
-    
     const fullName = localStorage.getItem("fullName");
     const email = localStorage.getItem("email");
     const phone = localStorage.getItem("phone");
@@ -52,7 +57,6 @@ function confirmBooking() {
     const arrivalStation = localStorage.getItem("arrivalStation");
     const numberOfPassengers = localStorage.getItem("numberOfPassengers");
 
-    
     document.getElementById("confirm-name").textContent = fullName || "N/A";
     document.getElementById("confirm-email").textContent = email || "N/A";
     document.getElementById("confirm-phone").textContent = phone || "N/A";
@@ -60,7 +64,6 @@ function confirmBooking() {
     document.getElementById("confirm-arrival").textContent = arrivalStation || "N/A";
     document.getElementById("confirm-passengers").textContent = numberOfPassengers || "N/A";
 
-    
     goToSection("booking-confirmation");
 }
 

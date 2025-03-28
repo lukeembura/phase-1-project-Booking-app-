@@ -84,11 +84,12 @@
             <input type="text" id="state" name="state" placeholder="hh:mm" required>
     
             <label for="zip">Number of Passengers:</label>
-            <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required>
+            <input type="text" id="zip" name="zip" placeholder="Enter number of passengers" required min="1" max="20">
             <div>
             <button type="button" onclick="saveBookingInfoData()">Next</button>
             </div>
         </form>
+        <p id="notice">Note: Please note that the maximum number of passengers you can make booking for is 20.</p>
     </section>
 
     <section id="payment">
@@ -136,6 +137,6 @@
     </div>
 </section>
 
-    <script src="../JS/index.js"></script>
+    <script src="../JS/index..js"></script>
 </body>
 </html>
