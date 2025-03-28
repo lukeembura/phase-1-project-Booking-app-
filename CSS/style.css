@@ -80,15 +80,6 @@ button#toggle-theme:hover {
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.description ol{
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-type: none;
-}
-.description ol li{
-    margin-top: 10px;
-    text-align: center;
-}
 
 #booking-homepage {
     background-color: rgb(129, 108, 108);
