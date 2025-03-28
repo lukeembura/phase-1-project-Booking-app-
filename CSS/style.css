@@ -46,7 +46,7 @@ body.dark-mode {
 }
 
 .navbar.dark-mode {
-    background-color: #333333;
+    background-color: #242222;
     color: #faf6f6;
 }
 
@@ -211,7 +211,7 @@ select, input[type='text'], input[name='card-number'] {
     
 }
 #booking-confirmation h1 {
-    color: gold;
+    color: gold;git 
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
