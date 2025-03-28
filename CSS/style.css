@@ -113,7 +113,7 @@ button#toggle-theme:hover {
     display: block;
 }
 #booking-homepage label {
-    color: rgb(108, 192, 164);
+    color: skyblue;
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
@@ -143,7 +143,7 @@ button#toggle-theme:hover {
     display: block;
 }
 #booking-info label {
-    color: rgb(108, 192, 164);
+    color: skyblue;
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
@@ -180,7 +180,7 @@ button#toggle-theme:hover {
     display: block;
 }
 #payment label {
-    color: rgb(108, 192, 164);
+    color: skyblue;
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
@@ -217,7 +217,7 @@ select, input[type='text'], input[name='card-number'] {
     display: block;
 }
 #booking-confirmation p {
-    color: rgb(108, 192, 164);
+    color: skyblue;
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
