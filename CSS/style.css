@@ -91,7 +91,7 @@ button#toggle-theme:hover {
 }
 
 #booking-homepage {
-    background-color: rgb(53, 48, 48);
+    background-color: rgb(129, 108, 108);
     padding: 20px;
     border-radius: 10px;
     margin-top: 100px;
@@ -107,7 +107,7 @@ button#toggle-theme:hover {
     display: block;
 }
 #booking-homepage h2 {
-    color: rgb(108, 192, 164);
+    background-color: rgb(129, 108, 108);
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
@@ -127,7 +127,7 @@ button#toggle-theme:hover {
 }
 
 #booking-info {
-    background-color: rgb(53, 48, 48);
+    background-color: rgb(129, 108, 108);
     padding: 20px;
     border-radius: 10px;
     margin-top: 100px;
@@ -164,7 +164,7 @@ button#toggle-theme:hover {
 }
 
 #payment {
-    background-color: rgb(53, 48, 48);
+    background-color: rgb(129, 108, 108);
     padding: 20px;
     border-radius: 10px;
     margin-top: 100px;
@@ -201,7 +201,7 @@ select, input[type='text'], input[name='card-number'] {
 }
 
 #booking-confirmation {
-    background-color: rgb(53, 48, 48);
+    background-color: rgb(129, 108, 108);
     padding: 20px;
     border-radius: 10px;
     margin-top: 100px;
@@ -211,7 +211,7 @@ select, input[type='text'], input[name='card-number'] {
     
 }
 #booking-confirmation h1 {
-    color: gold;git 
+    color: gold;
     font-size: 20px;
     margin-bottom: 20px;
     display: block;
