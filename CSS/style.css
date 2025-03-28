@@ -192,6 +192,14 @@ button#toggle-theme:hover {
     border-radius: 5px;
     border: 1px solid rgb(108, 192, 164);
 }
+#notice{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+    font-style: italic;
+}
+
 select, input[type='text'], input[name='card-number'] {
     width: auto;
     padding: 15px;
