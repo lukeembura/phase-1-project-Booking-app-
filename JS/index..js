@@ -36,10 +36,10 @@ function saveBookingInfoData() {
     const arrivalStation = document.getElementById("to").value;
     const numberOfPassengers = document.getElementById("zip").value;
 
-    // Validate the number of passengers
+    
     if (numberOfPassengers > 20) {
         alert("The maximum number of passengers allowed is 20. Please enter a valid number.");
-        return; // Stop execution if the validation fails
+        return; 
     }
 
     localStorage.setItem("departureStation", departureStation);

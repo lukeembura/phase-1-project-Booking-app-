@@ -98,16 +98,13 @@
             <form id="payment-method-form" onsubmit="handlePaymentSubmission(event)">
                 <label for="payment-method">Select Payment Method</label>
                 <select id="payment-method" name="payment-method" required onchange="togglePaymentFields()">
-                  <option value="credit-card" id="credit">Credit Card</option>
+                  <option value="m-pesa" id="m-pesa">M-Pesa</option>
                   <option value="bank-transfer" id="bank">Bank Transfer</option>
                 </select>
           
-                <div id="credit-card-fields">
-                  <label for="card-number">Card Number</label>
-                  <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
-          
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="123">
+                <div id="m-pesa-fields">
+                  <label for="m-pesa">M-Pesa</label>
+                  <input type="text" id="card-number" name="card-number" placeholder="Enter your phone number">
                 </div>
           
                 <div id="bank-transfer-fields" style="display: none;">
